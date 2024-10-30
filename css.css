@@ -96,10 +96,10 @@ body {
 }
 
 #backgroundAboutFake {
-    width: 10000000px;
+    width: 100vw;
     position: absolute;
     height: 310px;
-    left: -100000px;
+    right: 0vh ;
     background-color:#9c9cff08;
     z-index: -1;
 }
