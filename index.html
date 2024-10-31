@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0;">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="css.css">
-    
-    <script src="js.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="projects.css">
 </head>
 
 <body>
@@ -40,19 +39,59 @@
         <div id="backgroundAbout">
             <div id="backgroundAboutFake"></div>
             <p id="aboutHeader" class="abstBack header">ОБО МНЕ</p>
-            <p id="about">Разработчик с опытом работы на Unity, обладаю глубокими знаниями C# и владею C++, JavaScript и TypeScript. Работал в
-            команде над созданием мультиплеерного проекта. Имею опыт работы с различными инструментами и библиотеками, такими как
-            Zenject и ECS. Увлечен разработкой игр и стремлюсь развиваться в этой сфере.</p>
+            <p id="about">Разработчик с опытом работы на Unity, обладаю глубокими знаниями C# и владею C++, JavaScript и
+                TypeScript. Работал в
+                команде над созданием мультиплеерного проекта. Имею опыт работы с различными инструментами и
+                библиотеками, такими как
+                Zenject и ECS. Увлечен разработкой игр и стремлюсь развиваться в этой сфере.</p>
         </div>
-        
+
+        <p id="projectHeader" class="abstBack header">проекты</p>
+
+        <div class="projectBlock scalableElement">
+            <p class="projectBlockHeader">SandboxEcs</p>
+            <p class="projectText">Решил собрать свою версию песочницы на основе DOTS, но как обычно получился
+                Франкенштейн, но всё же в многопотоке.</p>
+
+            <div class="projectDemoBlock">
+                <video muted autoplay loop class="projectVideo">
+                    <source src="video4.mp4" type="video/mp4">
+                </video>
+                <p class="projectVideoText">Решил собрать свою версию песочницы на основе DOTS, но как обычно получился Франкенштейн, но всё же в многопотоке.</p>
+            </div>
+            <div class="projectDemoBlock">
+                <video muted autoplay loop class="projectVideo">
+                    <source src="video3.mp4" type="video/mp4">
+                </video>
+                <p class="projectVideoText">Решил собрать свою версию песочницы на основе DOTS, но как обычно получился Франкенштейн, но всё же в многопотоке.</p>
+            </div>
+
+            <div class="projectBlockFooter" onclick="Open(0)">Посмотреть полностью</div>
+        </div>
+        <div class="projectBlock scalableElement">
+            <p class="projectBlockHeader">SandboxEcs</p>
+            <p class="projectText">Решил собрать свою версию песочницы на основе DOTS, но как обычно получился
+                Франкенштейн, но всё же в многопотоке.</p>
+
+            <div class="projectDemoBlock">
+                <video muted autoplay loop class="projectVideo">
+                    <source src="testVideo.mp4" type="video/mp4">
+                </video>
+                <p class="projectVideoText">Решил собрать свою версию песочницы на основе DOTS, но как обычно получился Франкенштейн, но всё же в многопотоке.</p>
+            </div>
+            <div class="projectDemoBlock">
+                <video muted autoplay loop class="projectVideo">
+                    <source src="video2.mp4" type="video/mp4">
+                </video>
+                <p class="projectVideoText">Решил собрать свою версию песочницы на основе DOTS, но как обычно получился Франкенштейн, но всё же в многопотоке.</p>
+            </div>
+            <div class="projectBlockFooter" onclick="Open(1)">Посмотреть полностью</div>
+        </div>
+
+        <p id="projectHeader" class="abstBack header">ИИИИ</p>
     </div>
 
-    
-
-    <div>VV</div>
-    <video width="320" height="240" controls>
-        <source src="testVideo.mp4" type="video/mp4">
-    </video>
 </body>
 
+<script src="js.js" type="text/javascript"></script>
 </html>
