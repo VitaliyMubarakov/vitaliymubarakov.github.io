@@ -4,11 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Портофолио</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0;">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="kakoykrasavec.png">
+
+
+    <!-- font monrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -33,11 +41,12 @@
             <div id="logoTextHeader">
                 <p id="name" class="abstBack">Виталий Мубараков</p>
                 <p id="role">Unity-разработчик</p>
+                <p id="experience">Опыт работы 4 года 6 месяцев</p>
                 <p id="place">Иркутск, Россия</p>
             </div>
         </div>
         <div id="backgroundAbout">
-            <div id="backgroundAboutFake"></div>
+            <div class="backgroundAboutFake"></div>
             <p id="aboutHeader" class="abstBack header">ОБО МНЕ</p>
             <p id="about">Разработчик с опытом работы на Unity, обладаю глубокими знаниями C# и владею C++, JavaScript и
                 TypeScript. Работал в
@@ -57,13 +66,15 @@
                 <video muted autoplay loop class="projectVideo">
                     <source src="video4.mp4" type="video/mp4">
                 </video>
-                <p class="projectVideoText">Решил собрать свою версию песочницы на основе DOTS, но как обычно получился Франкенштейн, но всё же в многопотоке.</p>
+                <p class="projectVideoText">Решил собрать свою версию песочницы на основе DOTS, но как обычно получился
+                    Франкенштейн, но всё же в многопотоке.</p>
             </div>
             <div class="projectDemoBlock">
                 <video muted autoplay loop class="projectVideo">
                     <source src="video3.mp4" type="video/mp4">
                 </video>
-                <p class="projectVideoText">Решил собрать свою версию песочницы на основе DOTS, но как обычно получился Франкенштейн, но всё же в многопотоке.</p>
+                <p class="projectVideoText">Решил собрать свою версию песочницы на основе DOTS, но как обычно получился
+                    Франкенштейн, но всё же в многопотоке.</p>
             </div>
 
             <div class="projectBlockFooter" onclick="Open(0)">Посмотреть полностью</div>
@@ -77,21 +88,51 @@
                 <video muted autoplay loop class="projectVideo">
                     <source src="testVideo.mp4" type="video/mp4">
                 </video>
-                <p class="projectVideoText">Решил собрать свою версию песочницы на основе DOTS, но как обычно получился Франкенштейн, но всё же в многопотоке.</p>
+                <p class="projectVideoText">Решил собрать свою версию песочницы на основе DOTS, но как обычно получился
+                    Франкенштейн, но всё же в многопотоке.</p>
             </div>
             <div class="projectDemoBlock">
                 <video muted autoplay loop class="projectVideo">
                     <source src="video2.mp4" type="video/mp4">
                 </video>
-                <p class="projectVideoText">Решил собрать свою версию песочницы на основе DOTS, но как обычно получился Франкенштейн, но всё же в многопотоке.</p>
+                <p class="projectVideoText">Решил собрать свою версию песочницы на основе DOTS, но как обычно получился
+                    Франкенштейн, но всё же в многопотоке.</p>
             </div>
             <div class="projectBlockFooter" onclick="Open(1)">Посмотреть полностью</div>
         </div>
 
-        <p id="projectHeader" class="abstBack header">ИИИИ</p>
+        <p id="projectHeader" class="abstBack header">Контакты</p>
+
+        <div id="backgroundMedia"  class="backgroundAboutFake"></div>
+
+        <div id="media">
+            <div class="mediaLink">
+                <img src="./mdi_github.svg" class="icon">
+                <div class="mediaTextWrapper">
+                    <p class="mediaName">github</p>
+                    <p class="mediaDesc">https://github.com/VitaliyMubarakov</p>
+                </div>
+            </div>
+            <div class="mediaLink">
+                <img src="./ri_telegram-2-fill.svg" class="icon">
+                <div class="mediaTextWrapper">
+                    <p class="mediaName">telegram</p>
+                    <p class="mediaDesc">https://telegramm/VitaliyMubarakov</p>
+                </div>
+            </div>
+            <div class="mediaLink">
+                <img src="./entypo_email.svg" class="icon">
+                <div class="mediaTextWrapper">
+                    <p class="mediaName">Email</p>
+                    <p class="mediaDesc">vitaliymubarakov@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </body>
 
 <script src="js.js" type="text/javascript"></script>
+
 </html>
