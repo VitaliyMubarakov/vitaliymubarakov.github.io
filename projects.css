@@ -10,13 +10,13 @@
     border-radius: 40px;
     padding: 50px;
     /* block-size: fit-content; */
-    min-height: 650px;
+    min-height: 730px;
     overflow: hidden;
     transform-origin: top center;
     transition: transform 55s ease;
     transition: margin-bottom 55s ease;
     transition: height 1s ease;
-    
+
 }
 
 .projectBlockHeader {
@@ -24,12 +24,15 @@
     text-transform: uppercase;
     color: white;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .projectText {
-    font-size: 22px;
+    font-size: 18px;
     color: white;
-    margin-top: 10px;
+    margin-top: 20px;
+    line-height: 28px;
+
 }
 
 .projectDemoBlock {
@@ -48,13 +51,7 @@
     width: 100%;
     height: 69.25%;
     /* background-color: red; */
-    margin-top: 50px;
-}
-
-.projectVideoText {
-    font-size: 18px;
-    color: white;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 video {
@@ -68,12 +65,18 @@ video {
     height: 70px;
     background-color: #1a1a21;
     bottom: 0;
-    color:rgb(149, 149, 149);
+    color: rgb(149, 149, 149);
     font-size: 18px;
     font-weight: bold;
     vertical-align: middle;
     line-height: 70px;
 }
+
 .projectBlockFooter:hover {
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.badge {
+    margin-top: 6px;
+    margin-right: 4px;
 }

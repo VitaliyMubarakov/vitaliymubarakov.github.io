@@ -49,6 +49,7 @@
 .mediaDesc {
     font-size: 14px;
     color: rgb(174, 174, 174);
+    user-select: all;
 }
 
 #backgroundMedia {

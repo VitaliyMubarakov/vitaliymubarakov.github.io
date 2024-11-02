@@ -4,7 +4,12 @@ body {
     /* font-family: Arial, Helvetica, sans-serif; */
     font-family: "Manrope", Helvetica, sans-serif;
     user-select: none;
+    line-height: 28px;
     height: fit-content;
+}
+
+p {
+    line-height: 28px;
 }
 
 #grid {
@@ -46,7 +51,7 @@ body {
 }
 
 #logoBlock {
-    width: 743px;
+    width: 700px;
     height: 294px;
     /* background-color: rgb(0, 225, 255); */
     margin: auto;
@@ -56,15 +61,15 @@ body {
 }
 
 #logoImg {
-    width: 294px;
-    height: 294px;
+    width: 260px;
+    height: 260px;
     /* background-color: rgb(0, 255, 42); */
     left: 0px;
 }
 
 #logoTextHeader {
     width: 388px;
-    height: 294px;
+    height: 260px;
     /* background-color: rgb(149, 0, 255); */
     float: right;
 }
@@ -80,14 +85,14 @@ body {
 #role {
     font-size: 42px;
     color: white;
-    margin-top: 0px;
+    margin-top: 18px;
     font-weight: 500;
 }
 
 #experience {
     font-size: 20px;
     color: rgb(169, 169, 169);
-    margin-top: 15px;
+    margin-top: 30px;
     font-weight: 500;
     width: 100%;
 }

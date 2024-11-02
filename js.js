@@ -6,7 +6,7 @@ window.addEventListener('scroll', () => {
     UpdateSize();
 });
 
-setInterval(UpdateSize, 16);
+//setInterval(UpdateSize, 200);
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 function UpdateSize() {
     for (let i = 0; i < elements.length; i++) {
@@ -56,7 +56,7 @@ function Open(index) {
     } else {
         e.classList.remove("isClosed");
         e.classList.add("isOpen");
-        let height = getFitContentHeightWithMargin(e) - 130;
+        let height = getFitContentHeightWithMargin(e) - 230;
         e.style.height = `${height}px`;
     }
 
