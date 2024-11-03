@@ -22,7 +22,7 @@
     padding: 15px;
     transform-origin: center center;
     transition: 300ms all;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 .mediaLink:hover {
@@ -39,20 +39,24 @@
 
 .mediaTextWrapper {
     margin-left: 55px;
+    line-height: normal;
 }
 .mediaName {
     font-size: 16px;
     font-weight: 700;
     color:white;
     text-transform: uppercase;
+    line-height: normal;
 }
 .mediaDesc {
     font-size: 14px;
     color: rgb(174, 174, 174);
     user-select: all;
+    line-height: normal;
 }
 
 #backgroundMedia {
     margin-top: 45px;
-    height: 225px;
+    height: 360px;
 }
+
