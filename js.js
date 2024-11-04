@@ -7,6 +7,6 @@ console.log(`
 
 
 
-console.info("- StartInitWeb");
+console.info("- StartInitWeb v 0.1");
 
 $("#wrapper").load("about.html body > *")
