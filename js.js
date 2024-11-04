@@ -7,6 +7,10 @@ console.log(`
 ▀▄▄▄▄▀▀▀▄▄▄▀▀▀▀▄▄▄▀▄▄▄▄▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀
 `)
 
+$('#media').load('./resume.html');
+
+const nameMedia = document.getElementById('nameMedia');
+nameMedia.textContent = `© Vitaliy Mubarakov ${new Date().getFullYear()}`;
 const projects = document.getElementsByClassName('projectBlock');
 
 let listArr = Array.from(projects)
@@ -83,7 +87,7 @@ resizeObserver.observe(grid);
 
 
 
-//Open(projects[0]);
+Open(projects[0]);
 
 function Open(index) {
     let e = projects[index];

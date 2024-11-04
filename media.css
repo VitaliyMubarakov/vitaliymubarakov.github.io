@@ -57,6 +57,13 @@
 
 #backgroundMedia {
     margin-top: 45px;
-    height: 360px;
+    height: 400px;
+}
+
+#nameMedia {
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(159, 159, 159);
+    font-weight: 500;
 }
 
