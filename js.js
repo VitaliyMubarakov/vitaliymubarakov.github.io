@@ -9,4 +9,4 @@ console.log(`
 
 console.info("- StartInitWeb");
 
-$("#wrapper").load("./about.html body > *")
+$("#wrapper").load("about.html body > *")
