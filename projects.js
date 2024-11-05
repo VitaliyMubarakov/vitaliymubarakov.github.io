@@ -81,7 +81,7 @@ function InitProjectJS() {
 
     console.log("6");
 console.log(projects.length);
-    Open(projects[0]);
+    //Open(0);
     console.log("61");
     function Open(index) {
         console.log("-1");
