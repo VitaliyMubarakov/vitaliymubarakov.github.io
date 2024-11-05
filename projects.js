@@ -80,12 +80,13 @@ function InitProjectJS() {
     resizeObserver.observe(grid);
 
     console.log("6");
-
+console.log(projects.length);
     Open(projects[0]);
-
+    console.log("61");
     function Open(index) {
+        console.log("-1");
         let e = projects[index];
-
+        console.log("-2");
         if (e.classList.contains("isOpen")) {
             e.classList.remove("isOpen");
             e.classList.add("isClosed");
@@ -97,8 +98,10 @@ function InitProjectJS() {
             let height = getFitContentHeightWithMargin(e) - 230;
             e.style.height = `${height}px`;
         }
+        console.log("-3");
 
         UpdateSize();
+        console.log("-4");
     }
     console.log("7");
     function getFitContentHeightWithMargin(element) {
