@@ -7,7 +7,7 @@ console.log(`
 
 
 
-console.info("- StartInitWeb v 0.5");
+console.info("- StartInitWeb v 0.6");
 
 //$("#wrapper").load("./about.html body")
 
