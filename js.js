@@ -7,14 +7,14 @@ console.log(`
 
 
 
-console.info("- StartInitWeb v 4");
+console.info("- StartInitWeb v 5");
 
 //$("#wrapper").load("./about.html body")
 let wrapper = document.getElementById("wrapper");
 
 console.info("1");
-SetHtmlAbout();
-setTimeout(SetHtmlProjects, 6000);
+//SetHtmlAbout();
+//setTimeout(SetHtmlProjects, 6000);
 
 async function SetHtmlAbout() {
     await fetch('about.html')
