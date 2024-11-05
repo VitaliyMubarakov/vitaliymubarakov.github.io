@@ -30,7 +30,7 @@ async function SetHtmlAbout() {
             const textContent = doc.body; // Извлекаем текст из <body>
             
             wrapper.innerHTML = data;
-            Show(wrapper);
+            setTimeout(() => Show(wrapper), 1000); // Задержка для запуска анимации
         })
         .catch(error => console.error("Ошибка:", error));
 }
@@ -52,7 +52,7 @@ async function SetHtmlProjects() {
             console.log("Текст из файла:", data);
             console.info("4");
             wrapper.innerHTML = data;
-            Show(wrapper);
+            setTimeout(() => Show(wrapper), 1000); // Задержка для запуска анимации
         })
         .catch(error => console.error("Ошибка:", error));
 }
