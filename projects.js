@@ -1,14 +1,14 @@
 function InitProjectJS() {
     console.log("projectsInitStart");
     UpdateSize();
-
+    console.log("2");
     const projects = document.getElementsByClassName('projectBlock');
 
     let listArr = Array.from(projects)
     listArr.forEach(e => {
         SetBlockStartSize(e);
     })
-
+    console.log("3");
     function n(val, max, min) { return (val - min) / (max - min); }
 
     function SetBlockStartSize(e) {
@@ -30,7 +30,7 @@ function InitProjectJS() {
         //findedElement.style.backgroundColor = `white`;
         e.style.minHeight = `${height + 45 + 84}px`;
     }
-
+    console.log("4");
     const elements = document.getElementsByClassName('scalableElement');
     window.addEventListener('scroll', () => {
         UpdateSize();
@@ -64,7 +64,7 @@ function InitProjectJS() {
             e.style.opacity = `${1 - n(visibility * 100, 0, 1.4)}`;
         }
     }
-
+    console.log("5");
     // Выбираем элемент, за которым нужно наблюдать
     const grid = document.getElementById("grid");
 
@@ -76,7 +76,7 @@ function InitProjectJS() {
     // Начинаем наблюдать за изменениями размера элемента
     resizeObserver.observe(grid);
 
-
+    console.log("6");
 
     Open(projects[0]);
 
@@ -97,7 +97,7 @@ function InitProjectJS() {
 
         UpdateSize();
     }
-
+    console.log("7");
     function getFitContentHeightWithMargin(element) {
         const fitContentHeight = element.scrollHeight;
 
@@ -133,7 +133,7 @@ function InitProjectJS() {
 
         return distance;
     }
-
+    console.log("8");
     function getDistanceBetweenFirstAndThirdChild3(firstElement, lastElement) {
         const firstChildRect = firstElement.getBoundingClientRect();
         const thirdChildRect = lastElement.getBoundingClientRect();
