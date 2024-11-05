@@ -1,9 +1,12 @@
 function InitProjectJS() {
+    const elements = document.getElementsByClassName('scalableElement');
+    const projects = document.getElementsByClassName('projectBlock');
+    const grid = document.getElementById("grid");
+
     console.log("projectsInitStart");
     UpdateSize();
     console.log("2");
-    const projects = document.getElementsByClassName('projectBlock');
-
+    
     let listArr = Array.from(projects)
     listArr.forEach(e => {
         SetBlockStartSize(e);
@@ -31,7 +34,7 @@ function InitProjectJS() {
         e.style.minHeight = `${height + 45 + 84}px`;
     }
     console.log("4");
-    const elements = document.getElementsByClassName('scalableElement');
+    
     window.addEventListener('scroll', () => {
         UpdateSize();
     });
@@ -66,7 +69,7 @@ function InitProjectJS() {
     }
     console.log("5");
     // Выбираем элемент, за которым нужно наблюдать
-    const grid = document.getElementById("grid");
+    
 
     // Создаём новый ResizeObserver
     const resizeObserver = new ResizeObserver(entries => {
