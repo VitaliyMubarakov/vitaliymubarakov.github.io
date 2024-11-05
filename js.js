@@ -7,7 +7,7 @@ console.log(`
 
 
 
-console.info("- StartInitWeb v 8");
+console.info("- StartInitWeb v 9");
 
 //$("#wrapper").load("./about.html body")
 let wrapper = document.getElementById("wrapper");
@@ -30,9 +30,13 @@ async function SetHtmlAbout() {
             const textContent = doc.body; // Извлекаем текст из <body>
             
             wrapper.innerHTML = data;
+            
             setTimeout(() => Show(wrapper), 50); // Задержка для запуска анимации
+            window.scrollTo(0, 0); 
+
         })
         .catch(error => console.error("Ошибка:", error));
+    
 }
 
 async function SetHtmlProjects() {
@@ -52,7 +56,10 @@ async function SetHtmlProjects() {
             console.log("Текст из файла:", data);
             console.info("4");
             wrapper.innerHTML = data;
+            eval("InitProjectJS();");
             setTimeout(() => Show(wrapper), 50); // Задержка для запуска анимации
+            window.scrollTo(0, 0); 
+
         })
         .catch(error => console.error("Ошибка:", error));
 }
