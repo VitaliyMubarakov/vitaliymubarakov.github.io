@@ -7,12 +7,20 @@ console.log(`
 
 
 
-console.info("- StartInitWeb v 0.7");
+console.info("- StartInitWeb v 0.8");
 
-$("#wrapper").load("./about.html body")
+//$("#wrapper").load("./about.html body")
 
-$.get('about.html', function (data) {
-    loadedContent = $(data).html(); // Извлекаем содержимое <body> и сохраняем в переменную
-    $('#wrapper').html(loadedContent); // Вставляем содержимое в #wrapper
-    console.log("Загруженные данные:", loadedContent);
-});
+fetch('about.html')
+    .then(response => {
+        if (!response.ok) throw new Error("Ошибка загрузки данных");
+        return response.text();
+    })
+    .then(data => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(data, 'text/html');
+        const textContent = doc.body.innerText; // Извлекаем текст из <body>
+        console.log("Текст из HTML файла:", textContent);
+        console.log("Текст из файла:", data);
+    })
+    .catch(error => console.error("Ошибка:", error));
