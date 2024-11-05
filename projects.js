@@ -88,15 +88,24 @@ console.log(projects.length);
         let e = projects[index];
         console.log("-2");
         if (e.classList.contains("isOpen")) {
+            console.log("+1");
             e.classList.remove("isOpen");
+            console.log("+2");
             e.classList.add("isClosed");
+            console.log("+3");
             e.style.height = `${0}px`;
+            console.log("+4");
 
         } else {
+            console.log("= 1");
             e.classList.remove("isClosed");
+            console.log("= 2");
             e.classList.add("isOpen");
+            console.log("= 3");
             let height = getFitContentHeightWithMargin(e) - 230;
+            console.log("= 4");
             e.style.height = `${height}px`;
+            console.log("= 5");
         }
         console.log("-3");
 
