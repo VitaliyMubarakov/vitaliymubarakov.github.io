@@ -13,6 +13,8 @@ console.info("- StartInitWeb v 1");
 let wrapper = document.getElementById("wrapper");
 
 console.info("1");
+SetHtmlAbout();
+
 async function SetHtmlAbout() {
     await fetch('about.html')
         .then(response => {
