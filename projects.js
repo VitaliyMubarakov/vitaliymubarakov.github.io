@@ -87,7 +87,7 @@ console.log(projects.length);
         console.log("-1");
         let e = projects[index];
         console.log("-2");
-        console.log(e.nodeName);
+        console.log(!e ? "da" : "net");
         console.log("--3");
         console.log(e.classList);
         console.log("--4");
