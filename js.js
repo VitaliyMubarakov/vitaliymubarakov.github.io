@@ -7,9 +7,9 @@ console.log(`
 
 
 
-console.info("- StartInitWeb v 0.6");
+console.info("- StartInitWeb v 0.7");
 
-//$("#wrapper").load("./about.html body")
+$("#wrapper").load("./about.html body")
 
 $.get('about.html', function (data) {
     loadedContent = $(data).html(); // Извлекаем содержимое <body> и сохраняем в переменную
