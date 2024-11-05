@@ -7,7 +7,7 @@ console.log(`
 
 
 
-console.info("- StartInitWeb v 2");
+console.info("- StartInitWeb v 3");
 
 //$("#wrapper").load("./about.html body")
 let wrapper = document.getElementById("wrapper");
@@ -30,7 +30,7 @@ async function SetHtmlAbout() {
             console.log("Текст из HTML файла:", textContent);
             console.log("Текст из файла:", data);
             console.info("4");
-            wrapper.innerHTML = textContent.text();
+            wrapper.innerHTML = data;
         })
         .catch(error => console.error("Ошибка:", error));
 }
