@@ -7,7 +7,7 @@ console.log(`
 
 
 
-console.info("- StartInitWeb v 3");
+console.info("- StartInitWeb v 4");
 
 //$("#wrapper").load("./about.html body")
 let wrapper = document.getElementById("wrapper");
@@ -27,7 +27,7 @@ async function Init() {
     aboutHTML = await GetHtmlAbout();
 
     //initJS
-    eval("InitProjectJS();");
+    
 
     console.log("Load data");
     console.log(projectsHTML);
@@ -64,6 +64,7 @@ function LoadData(type) {
         
         case "projects":
             wrapper.innerHTML = projectsHTML;
+            eval("InitProjectJS();");
             break;
 
         default:
