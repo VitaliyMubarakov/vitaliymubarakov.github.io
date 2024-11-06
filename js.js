@@ -74,6 +74,9 @@ function LoadData(type) {
     setTimeout(() => Show(wrapper), 100); // Задержка для запуска анимации
 }
 
+//footer
+document.getElementById("footer").innerText = "All rights reserved © Vitaliy Mubarakov " + new Date().getFullYear();
+
 
 
 
