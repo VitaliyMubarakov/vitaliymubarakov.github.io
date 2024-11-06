@@ -6,217 +6,214 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-        <link rel="stylesheet" href="css.css">
-        
-        <link rel="stylesheet" href="reset.css">
-        <!-- font monrope -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+
+    <link rel="stylesheet" href="reset.css">
+    <!-- font monrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="grid">
-        <p id="projectHeader" class="abstBack header">проекты</p>
+    <p id="projectHeader" class="abstBack header">проекты</p>
 
-        <div class="projectBlock scalableElement">
-            <p class="projectBlockHeader">SandboxEcs</p>
-            <img class="badge"
-                src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" alt="">
-            <img class="badge"
-                src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="">
-            <p class="projectText">Я предпринял попытку создать свой вариант песочницы, опираясь на DOTS, однако,
-                как
-                это часто бывает, результат получился
-                неидеальным. Тем не менее, в многопоточном режиме благодаря JOBS и ECS системам мы получаем хорошую
-                производительность.</p>
-            </p>
+    <div class="projectBlock scalableElement">
+        <p class="projectBlockHeader">SandboxEcs</p>
+        <img class="badge"
+            src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" alt="">
+        <img class="badge"
+            src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="">
+        <p class="projectText">Я предпринял попытку создать свой вариант песочницы, опираясь на DOTS, однако,
+            как
+            это часто бывает, результат получился
+            неидеальным. Тем не менее, в многопоточном режиме благодаря JOBS и ECS системам мы получаем хорошую
+            производительность.</p>
+        </p>
 
-            <div class="projectDemoBlock">
-                <video muted autoplay loop class="projectVideo">
-                    <source src="vid/Sandboxecs1.mp4" type="video/mp4">
-                </video>
-            </div>
-            <p class="projectText">
-                • В игре реализована система перемещения, основанная на плавном изменении идентификаторов ячеек.<br>
-                • Также присутствует гравитация и базовая реализация физики с ускорением и замедлением. <br>
-                • Размер игрового поля составляет 260000 ячеек. <br>
-                • Частота кадров в секунду составляет примерно 300.
-            </p>
-            <div class="projectDemoBlock">
-                <video muted autoplay loop class="projectVideo">
-                    <source src="vid/Sandboxecs2.mp4" type="video/mp4">
-                </video>
-            </div>
-            <p class="projectText">
-                В рамках проекта реализован трёхмерный режим визуализации. Архитектура изначально разрабатывалась с
-                учётом возможности изменения количества измерений, что позволяет избежать проблем при переключении
-                режимов отрисовки. Однако существует проблема, связанная с рендерингом, который осуществляется через
-                DrawMeshInstanced без объединения геометрии. При большом количестве вокселей это может создавать
-                нагрузку на систему. <br>
-            </p>
-            <div class="projectDemoBlock">
-                <video muted autoplay loop class="projectVideo">
-                    <source src="vid/Sandboxecs3.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div id="onclick0" class="projectBlockFooter">Посмотреть полностью</div>
+        <div class="projectDemoBlock">
+            <video muted autoplay loop class="projectVideo">
+                <source src="vid/Sandboxecs1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="projectText">
+            • В игре реализована система перемещения, основанная на плавном изменении идентификаторов ячеек.<br>
+            • Также присутствует гравитация и базовая реализация физики с ускорением и замедлением. <br>
+            • Размер игрового поля составляет 260000 ячеек. <br>
+            • Частота кадров в секунду составляет примерно 300.
+        </p>
+        <div class="projectDemoBlock">
+            <video muted autoplay loop class="projectVideo">
+                <source src="vid/Sandboxecs2.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="projectText">
+            В рамках проекта реализован трёхмерный режим визуализации. Архитектура изначально разрабатывалась с
+            учётом возможности изменения количества измерений, что позволяет избежать проблем при переключении
+            режимов отрисовки. Однако существует проблема, связанная с рендерингом, который осуществляется через
+            DrawMeshInstanced без объединения геометрии. При большом количестве вокселей это может создавать
+            нагрузку на систему. <br>
+        </p>
+        <div class="projectDemoBlock">
+            <video muted autoplay loop class="projectVideo">
+                <source src="vid/Sandboxecs3.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="onclick0" class="projectBlockFooter">Посмотреть полностью</div>
+    </div>
+
+    <div class="projectBlock scalableElement">
+        <p class="projectBlockHeader">Minecraft</p>
+        <img class="badge"
+            src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" alt="">
+        <img class="badge"
+            src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="">
+        <p class="projectText">
+            Попытка создать свой клон майнкрафта с генерацией геометрии и системой освещения.<br>
+        </p>
+        <div class="projectDemoBlock">
+            <video muted autoplay loop class="projectVideo">
+                <source src="vid/mine1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="projectText">
+            • Все ячейки это число с ID.<br>
+            • Система асинхронного кроссчанкового освещения через алгоритм BFS (поиск в ширину).<br>
+            • Асинхронное разрушение блоков.<br>
+            • Поиск пути через алгоритм A*.<br>
+            • Генерируемый Ambient Occlusion<br>
+            • Каждый чанк 16x16x128.<br>
+            • Частота кадров в секунду составляет примерно 200.
+        </p>
+
+        <div class="projectDemoBlock">
+            <video muted autoplay loop class="projectVideo">
+                <source src="vid/mine2.mp4" type="video/mp4">
+            </video>
         </div>
 
-        <div class="projectBlock scalableElement">
-            <p class="projectBlockHeader">Minecraft</p>
-            <img class="badge"
-                src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" alt="">
-            <img class="badge"
-                src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="">
-            <p class="projectText">
-                Попытка создать свой клон майнкрафта с генерацией геометрии и системой освещения.<br>
-            </p>
-            <div class="projectDemoBlock">
-                <video muted autoplay loop class="projectVideo">
-                    <source src="vid/mine1.mp4" type="video/mp4">
-                </video>
-            </div>
-            <p class="projectText">
-                • Все ячейки это число с ID.<br>
-                • Система асинхронного кроссчанкового освещения через алгоритм BFS (поиск в ширину).<br>
-                • Асинхронное разрушение блоков.<br>
-                • Поиск пути через алгоритм A*.<br>
-                • Генерируемый Ambient Occlusion<br>
-                • Каждый чанк 16x16x128.<br>
-                • Частота кадров в секунду составляет примерно 200.
-            </p>
-
-            <div class="projectDemoBlock">
-                <video muted autoplay loop class="projectVideo">
-                    <source src="vid/mine2.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <p class="projectText">
-                Система освещения работает через самописные шейдеры и включает себя как яркость от других блоков,
-                так и
-                свет от неба.
-            </p>
-            <div class="projectDemoBlock">
-                <video muted autoplay loop class="projectVideo">
-                    <source src="vid/mine3.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <p class="projectText">
-                Ко всему в проект была встроенна система лже волюметрик облаков. Сэмплируя текстуру размытых
-                квадратов,
-                а далее умножая её яркость на высоту, мы получаем иллюзию объёма и тени под облаком.
-            </p>
-            <div class="projectDemoBlock">
-                <video muted autoplay loop class="projectVideo">
-                    <source src="vid/mine4.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <div id="onclick1" class="projectBlockFooter">Посмотреть полностью</div>
+        <p class="projectText">
+            Система освещения работает через самописные шейдеры и включает себя как яркость от других блоков,
+            так и
+            свет от неба.
+        </p>
+        <div class="projectDemoBlock">
+            <video muted autoplay loop class="projectVideo">
+                <source src="vid/mine3.mp4" type="video/mp4">
+            </video>
         </div>
 
-        <div class="projectBlock scalableElement">
-            <p class="projectBlockHeader">TopDownShooter</p>
-            <img class="badge"
-                src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" alt="">
-            <img class="badge"
-                src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="">
-
-            <p class="projectText">
-                В течение года я работал над своим проектом, постоянно расширяя и дополняя его новыми геймплейными
-                элементами. Разработка проходила в несколько итераций каждая из которых координально меняла
-                геймплейный цикл.
-            </p>
-            <div class="projectDemoBlock">
-                <video muted autoplay loop class="projectVideo">
-                    <source src="vid/top1.mp4" type="video/mp4">
-                </video>
-            </div>
-            <p class="projectText">
-                Первая итерация:<br><br>
-                • Квесты с динамическим назначением задач.<br>
-                • Стрельба (через пул).<br>
-                • Процедурная генерация уровней через шаблоны.<br>
-                • Динамическая окклюзия освещения.<br>
-                • Поиск пути через NavMesh<br>
-                • Эффект поля зрения (использует Jobs, затраты ничтожны).<br>
-                • Инвентарь / Контейнеры / Лут
-            </p>
-
-            <div class="projectDemoBlock">
-                <video muted autoplay loop class="projectVideo">
-                    <source src="vid/top2.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <p class="projectText">
-                Вторая итерация<br><br>
-                • Процедурная генерация локации на освное шума перлина.<br>
-                • Поиск пути через A* на сетке.<br>
-                • Физичное перемещение механизмов.<br>
-                • Кабеля со своей физикой через группу Line Renderer.<br>
-                • Самодельные 3D модели вдохновлённые Astroneer.<br>
-            </p>
-
-            <div class="projectDemoBlock">
-                <video muted autoplay loop class="projectVideo">
-                    <source src="vid/top3.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <div id="onclick2" class="projectBlockFooter">Посмотреть полностью</div>
+        <p class="projectText">
+            Ко всему в проект была встроенна система лже волюметрик облаков. Сэмплируя текстуру размытых
+            квадратов,
+            а далее умножая её яркость на высоту, мы получаем иллюзию объёма и тени под облаком.
+        </p>
+        <div class="projectDemoBlock">
+            <video muted autoplay loop class="projectVideo">
+                <source src="vid/mine4.mp4" type="video/mp4">
+            </video>
         </div>
 
-        <div class="projectBlock scalableElement">
-            <p class="projectBlockHeader">SkyMP (Skyrim Multiplayer)</p>
-            <img class="badge"
-                src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
-                alt="">
-            <img class="badge"
-                src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-                alt="">
-            <img class="badge"
-                src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
-                alt="">
-            <img class="badge"
-                src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"
-                alt="">
-            <p class="projectText">
-            <p class="projectText">
-            </p>
-            <p class="projectText">
-                Работал в команде русскоязычных разработчиков над созданием мультиплеерного мода для Skyrim.
-            </p>
-            <div class="projectDemoBlock">
-                <video muted autoplay loop class="projectVideo">
-                    <source src="vid/skymp1.mp4" type="video/mp4">
-                </video>
-            </div>
-            <p class="projectText">
-                •Занимался разработкой и улучшением механик как на клиентской, так и на серверной частях, используя
-                JavaScript и
-                TypeScript.<br>
-                •Реализовал системы для игры: покупка недвижимости с настройкой прав доступа для её объектов и
-                предметов на территории,
-                механики для работы на шахтах и лесопилках, а также создание группы (party) для кооперации
-                игроков.<br>
-                •Написал лаунчер проекта на C# / WPF.<br>
-                •Работал над улучшением ядра проекта на C++.<br>
-                •Взаимодействовал с командой — с проектным менеджером, бэкенд и фронтенд разработчиками,
-                левел-дизайнерами,
-                геймдизайнерами и дизайнерами интерфейсов.<br>
-            </p>
-            <div class="projectDemoBlock">
-                <video muted autoplay loop class="projectVideo">
-                    <source src="vid/skymp2.mp4" type="video/mp4">
-                </video>
-            </div>
+        <div id="onclick1" class="projectBlockFooter">Посмотреть полностью</div>
+    </div>
 
-            <div id="onclick3" class="projectBlockFooter">Посмотреть полностью</div>
+    <div class="projectBlock scalableElement">
+        <p class="projectBlockHeader">TopDownShooter</p>
+        <img class="badge"
+            src="https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white" alt="">
+        <img class="badge"
+            src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="">
+
+        <p class="projectText">
+            В течение года я работал над своим проектом, постоянно расширяя и дополняя его новыми геймплейными
+            элементами. Разработка проходила в несколько итераций каждая из которых координально меняла
+            геймплейный цикл.
+        </p>
+        <div class="projectDemoBlock">
+            <video muted autoplay loop class="projectVideo">
+                <source src="vid/top1.mp4" type="video/mp4">
+            </video>
         </div>
+        <p class="projectText">
+            Первая итерация:<br><br>
+            • Квесты с динамическим назначением задач.<br>
+            • Стрельба (через пул).<br>
+            • Процедурная генерация уровней через шаблоны.<br>
+            • Динамическая окклюзия освещения.<br>
+            • Поиск пути через NavMesh<br>
+            • Эффект поля зрения (использует Jobs, затраты ничтожны).<br>
+            • Инвентарь / Контейнеры / Лут
+        </p>
+
+        <div class="projectDemoBlock">
+            <video muted autoplay loop class="projectVideo">
+                <source src="vid/top2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p class="projectText">
+            Вторая итерация<br><br>
+            • Процедурная генерация локации на освное шума перлина.<br>
+            • Поиск пути через A* на сетке.<br>
+            • Физичное перемещение механизмов.<br>
+            • Кабеля со своей физикой через группу Line Renderer.<br>
+            • Самодельные 3D модели вдохновлённые Astroneer.<br>
+        </p>
+
+        <div class="projectDemoBlock">
+            <video muted autoplay loop class="projectVideo">
+                <source src="vid/top3.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div id="onclick2" class="projectBlockFooter">Посмотреть полностью</div>
+    </div>
+
+    <div class="projectBlock scalableElement">
+        <p class="projectBlockHeader">SkyMP (Skyrim Multiplayer)</p>
+        <img class="badge"
+            src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="">
+        <img class="badge"
+            src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+            alt="">
+        <img class="badge"
+            src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
+            alt="">
+        <img class="badge"
+            src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"
+            alt="">
+        <p class="projectText">
+        <p class="projectText">
+        </p>
+        <p class="projectText">
+            Работал в команде русскоязычных разработчиков над созданием мультиплеерного мода для Skyrim.
+        </p>
+        <div class="projectDemoBlock">
+            <video muted autoplay loop class="projectVideo">
+                <source src="vid/skymp1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p class="projectText">
+            •Занимался разработкой и улучшением механик как на клиентской, так и на серверной частях, используя
+            JavaScript и
+            TypeScript.<br>
+            •Реализовал системы для игры: покупка недвижимости с настройкой прав доступа для её объектов и
+            предметов на территории,
+            механики для работы на шахтах и лесопилках, а также создание группы (party) для кооперации
+            игроков.<br>
+            •Написал лаунчер проекта на C# / WPF.<br>
+            •Работал над улучшением ядра проекта на C++.<br>
+            •Взаимодействовал с командой — с проектным менеджером, бэкенд и фронтенд разработчиками,
+            левел-дизайнерами,
+            геймдизайнерами и дизайнерами интерфейсов.<br>
+        </p>
+        <div class="projectDemoBlock">
+            <video muted autoplay loop class="projectVideo">
+                <source src="vid/skymp2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div id="onclick3" class="projectBlockFooter">Посмотреть полностью</div>
     </div>
 
     <script src="projects.js" type="text/javascript"></script>
