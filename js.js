@@ -15,38 +15,43 @@ let wrapper = document.getElementById("wrapper");
 console.info("2");
 //SetHtmlAbout();
 //setTimeout(SetHtmlProjects, 6000);
+Init();
 
-let projectsHTML = await GetHtmlAbout();
-let homeHTML = await GetProjectAbout();
+async function Init() {
+    let projectsHTML = await GetHtmlAbout();
+    let homeHTML = await GetProjectAbout();
 
-console.log("Load data");
-console.log(projectsHTML);
-console.log("=====================================");
-console.log(homeHTML);
+    console.log("Load data");
+    console.log(projectsHTML);
+    console.log("=====================================");
+    console.log(homeHTML);
 
-async function GetHtmlAbout() {
-    await fetch('about.html')
-        .then(response => {
-            if (!response.ok) throw new Error("Ошибка загрузки данных");
-            return response.text();
-        })
-        .then(data => {
-            return data;
-        })
-        .catch(error => console.error("Ошибка:", error));
+    async function GetHtmlAbout() {
+        await fetch('about.html')
+            .then(response => {
+                if (!response.ok) throw new Error("Ошибка загрузки данных");
+                return response.text();
+            })
+            .then(data => {
+                return data;
+            })
+            .catch(error => console.error("Ошибка:", error));
+    }
+
+    async function GetProjectAbout() {
+        await fetch('projects.html')
+            .then(response => {
+                if (!response.ok) throw new Error("Ошибка загрузки данных");
+                return response.text();
+            })
+            .then(data => {
+                return data;
+            })
+            .catch(error => console.error("Ошибка:", error));
+    }
 }
 
-async function GetProjectAbout() {
-    await fetch('projects.html')
-        .then(response => {
-            if (!response.ok) throw new Error("Ошибка загрузки данных");
-            return response.text();
-        })
-        .then(data => {
-            return data;
-        })
-        .catch(error => console.error("Ошибка:", error));
-}
+
 
 // async function asdada() {
 //     Hide(wrapper);
