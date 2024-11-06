@@ -7,7 +7,7 @@ console.log(`
 
 
 
-console.info("- StartInitWeb v 1");
+console.info("- StartInitWeb v 2");
 
 //$("#wrapper").load("./about.html body")
 let wrapper = document.getElementById("wrapper");
@@ -23,11 +23,11 @@ Init();
 
 async function Init() {
     //get html
-    projectsHTML = await GetHtmlAbout();
+    projectsHTML = await GetHtmlProject();
     aboutHTML = await GetProjectAbout();
 
     //initJS
-    //eval("InitProjectJS();");
+    eval("InitProjectJS();");
 
     console.log("Load data");
     console.log(projectsHTML);
@@ -44,7 +44,7 @@ async function Init() {
             })
             .catch(error => console.error("Ошибка:", error));
     }
-    async function GetProjectAbout() {
+    async function GetHtmlProject() {
         return await fetch('projects.html')
             .then(response => {
                 if (!response.ok) throw new Error("Ошибка загрузки данных");
