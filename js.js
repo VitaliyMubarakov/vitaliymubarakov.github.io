@@ -12,12 +12,12 @@ console.info("- StartInitWeb v 1");
 //$("#wrapper").load("./about.html body")
 let wrapper = document.getElementById("wrapper");
 
-console.info("1");
+console.info("2");
 //SetHtmlAbout();
 //setTimeout(SetHtmlProjects, 6000);
 
-let projectsHTML = GetHtmlAbout();
-let homeHTML = GetProjectAbout();
+let projectsHTML = await GetHtmlAbout();
+let homeHTML = await GetProjectAbout();
 
 console.log("Load data");
 console.log(projectsHTML);
