@@ -7,7 +7,7 @@ console.log(`
 
 
 
-console.info("- StartInitWeb v 1");
+console.info("- StartInitWeb v 3");
 
 //$("#wrapper").load("./about.html body")
 let wrapper = document.getElementById("wrapper");
@@ -27,25 +27,19 @@ async function Init() {
     console.log(homeHTML);
 
     async function GetHtmlAbout() {
-        await fetch('about.html')
+        return await fetch('about.html')
             .then(response => {
                 if (!response.ok) throw new Error("Ошибка загрузки данных");
                 return response.text();
-            })
-            .then(data => {
-                return data;
             })
             .catch(error => console.error("Ошибка:", error));
     }
 
     async function GetProjectAbout() {
-        await fetch('projects.html')
+        return await fetch('projects.html')
             .then(response => {
                 if (!response.ok) throw new Error("Ошибка загрузки данных");
                 return response.text();
-            })
-            .then(data => {
-                return data;
             })
             .catch(error => console.error("Ошибка:", error));
     }
