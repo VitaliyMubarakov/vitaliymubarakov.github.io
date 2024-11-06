@@ -16,8 +16,8 @@ console.info("1");
 //SetHtmlAbout();
 //setTimeout(SetHtmlProjects, 6000);
 
-let projectsHTML = await GetHtmlAbout();
-let homeHTML = await GetProjectAbout();
+let projectsHTML = GetHtmlAbout();
+let homeHTML = GetProjectAbout();
 
 console.log("Load data");
 console.log(projectsHTML);
