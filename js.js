@@ -7,7 +7,7 @@ console.log(`
 
 
 
-console.info("- StartInitWeb v 9");
+console.info("- StartInitWeb v 1");
 
 //$("#wrapper").load("./about.html body")
 let wrapper = document.getElementById("wrapper");
