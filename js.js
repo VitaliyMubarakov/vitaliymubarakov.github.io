@@ -55,6 +55,8 @@ async function Init() {
 }
 
 function LoadData(type) {
+    Hide(wrapper);
+
     switch (type) {
         case "about":
             wrapper.innerHTML = aboutHTML;
@@ -67,6 +69,8 @@ function LoadData(type) {
         default:
             break;
     }
+
+    Show(wrapper);
 }
 
 
