@@ -70,7 +70,7 @@ function LoadData(type) {
             break;
     }
 
-    Show(wrapper);
+    setTimeout(() => Show(wrapper), 100); // Задержка для запуска анимации
 }
 
 
