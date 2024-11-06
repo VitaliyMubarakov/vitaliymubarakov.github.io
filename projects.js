@@ -3,10 +3,12 @@ function InitProjectJS() {
     const projects = document.getElementsByClassName('projectBlock');
     const grid = document.getElementById("grid");
 
-    document.getElementById("onclick0").onclick = Open(0);
-    document.getElementById("onclick1").onclick = Open(1);
-    document.getElementById("onclick2").onclick = Open(2);
-    document.getElementById("onclick3").onclick = Open(3);
+    // document.getElementById("onclick0").onclick = Open(0);
+    // document.getElementById("onclick1").onclick = Open(1);
+    // document.getElementById("onclick2").onclick = Open(2);
+    // document.getElementById("onclick3").onclick = Open(3);
+
+    document.getElementById("onclick0").addEventListener('click', () => console.log("Первый обработчик"));
 
     console.log("projectsInitStart");
     UpdateSize();
