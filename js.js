@@ -7,10 +7,10 @@ console.log(`
 
 
 
-console.info("- StartInitWeb v 2");
+console.info("- StartInitWeb v 3");
 
 //$("#wrapper").load("./about.html body")
-let wrapper = document.getElementById("grid");
+let wrapper = document.getElementById("wrapper");
 
 console.info("2");
 //SetHtmlAbout();
