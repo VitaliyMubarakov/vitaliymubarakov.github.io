@@ -7,7 +7,7 @@ console.log(`
 
 
 
-console.info("- StartInitWeb v 18");
+console.info("- StartInitWeb v 19");
 
 //$("#wrapper").load("./about.html body")
 let wrapper = document.getElementById("wrapper");
@@ -31,7 +31,7 @@ async function GetHtmlAbout() {
             return response.text();
         })
         .then(data => {
-            projectsHTML = data;
+            return data.text();
         })
         .catch(error => console.error("Ошибка:", error));
 }
@@ -43,7 +43,7 @@ async function GetProjectAbout() {
             return response.text();
         })
         .then(data => {
-            projectsHTML = data;
+            return data.text();
         })
         .catch(error => console.error("Ошибка:", error));
 }
