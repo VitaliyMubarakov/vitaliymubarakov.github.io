@@ -8,7 +8,18 @@ function InitProjectJS() {
     // document.getElementById("onclick2").onclick = Open(2);
     // document.getElementById("onclick3").onclick = Open(3);
 
-    document.getElementById("onclick0").addEventListener('click', () => console.log("Первый обработчик"));
+    document.getElementById("onclick0").addEventListener('click', () => {
+        console.log("Первый обработчик"); Open(0);
+    });
+    document.getElementById("onclick1").addEventListener('click', () => {
+        console.log("Первый обработчик"); Open(1);
+    });
+    document.getElementById("onclick2").addEventListener('click', () => {
+        console.log("Первый обработчик"); Open(2);
+    });
+    document.getElementById("onclick3").addEventListener('click', () => {
+        console.log("Первый обработчик"); Open(3);
+    });
 
     console.log("projectsInitStart");
     UpdateSize();
