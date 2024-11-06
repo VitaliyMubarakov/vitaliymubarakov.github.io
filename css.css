@@ -13,7 +13,7 @@ p {
 }
 
 #grid {
-    width: 1128px;
+    width: 790px;
     /* background-color: red; */
     margin: 0 auto;
 }
@@ -27,7 +27,7 @@ p {
     top: 45px;
     transform: translate(-50%, -50%);
     align-content: center;
-    text-align: center;
+    /* text-align: center; */
     z-index: 10;
     backdrop-filter: blur(25px);
     font-weight: 600;
@@ -130,7 +130,7 @@ p {
 #about {
     color: white;
     padding-top: 30px;
-    width: 70%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
