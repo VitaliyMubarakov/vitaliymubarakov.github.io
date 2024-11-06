@@ -7,7 +7,7 @@ console.log(`
 
 
 
-console.info("- StartInitWeb v 6");
+console.info("- StartInitWeb v 7");
 
 //$("#wrapper").load("./about.html body")
 let wrapper = document.getElementById("wrapper");
@@ -27,7 +27,7 @@ async function Init() {
     aboutHTML = await GetProjectAbout();
 
     //initJS
-    eval("InitProjectJS();");
+    //eval("InitProjectJS();");
 
     console.log("Load data");
     console.log(projectsHTML);
