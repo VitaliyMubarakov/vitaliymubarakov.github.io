@@ -3,15 +3,15 @@ function InitProjectJS() {
     const projects = document.getElementsByClassName('projectBlock');
     const grid = document.getElementById("grid");
 
-    //document.getElementById("onclick0").onclick = Open(0);
-    //document.getElementById("onclick1").onclick = Open(1);
-    //document.getElementById("onclick2").onclick = Open(2);
-    //document.getElementById("onclick3").onclick = Open(3);
+    document.getElementById("onclick0").onclick = Open(0);
+    document.getElementById("onclick1").onclick = Open(1);
+    document.getElementById("onclick2").onclick = Open(2);
+    document.getElementById("onclick3").onclick = Open(3);
 
     console.log("projectsInitStart");
     UpdateSize();
     console.log("2");
-    
+
     let listArr = Array.from(projects)
     listArr.forEach(e => {
         SetBlockStartSize(e);
@@ -39,7 +39,7 @@ function InitProjectJS() {
         e.style.minHeight = `${height + 45 + 84}px`;
     }
     console.log("4");
-    
+
     window.addEventListener('scroll', () => {
         UpdateSize();
     });
@@ -74,7 +74,7 @@ function InitProjectJS() {
     }
     console.log("5");
     // Выбираем элемент, за которым нужно наблюдать
-    
+
 
     // Создаём новый ResizeObserver
     const resizeObserver = new ResizeObserver(entries => {
@@ -85,7 +85,7 @@ function InitProjectJS() {
     resizeObserver.observe(grid);
 
     console.log("6");
-console.log(projects.length);
+    console.log(projects.length);
     //Open(0);
     console.log("61");
     function Open(index) {
