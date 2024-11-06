@@ -7,7 +7,7 @@ console.log(`
 
 
 
-console.info("- StartInitWeb v 3");
+console.info("- StartInitWeb v 4");
 
 //$("#wrapper").load("./about.html body")
 let wrapper = document.getElementById("wrapper");
@@ -25,9 +25,10 @@ async function Init() {
     //get html
     projectsHTML = await GetHtmlProject();
     aboutHTML = await GetHtmlAbout();
+    resumeHTML = await GetHtmlResume();
 
     //initJS
-    
+    LoadData(`about`);
 
     console.log("Load data");
     console.log(projectsHTML);
@@ -52,6 +53,14 @@ async function Init() {
             })
             .catch(error => console.error("Ошибка:", error));
     }
+    async function GetHtmlResume() {
+        return await fetch('resume.html')
+            .then(response => {
+                if (!response.ok) throw new Error("Ошибка загрузки данных");
+                return response.text();
+            })
+            .catch(error => console.error("Ошибка:", error));
+    }
 }
 
 function LoadData(type) {
@@ -65,6 +74,10 @@ function LoadData(type) {
         case "projects":
             wrapper.innerHTML = projectsHTML;
             eval("InitProjectJS();");
+            break;
+        
+        case "resume":
+            wrapper.innerHTML = resumeHTML;
             break;
 
         default:
