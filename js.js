@@ -18,13 +18,19 @@ console.info("2");
 Init();
 
 async function Init() {
+    //get html
     let projectsHTML = await GetHtmlAbout();
     let homeHTML = await GetProjectAbout();
+
+    //initJS
+    eval("InitProjectJS();");
 
     console.log("Load data");
     console.log(projectsHTML);
     console.log("=====================================");
     console.log(homeHTML);
+
+
 
     async function GetHtmlAbout() {
         return await fetch('about.html')
@@ -34,7 +40,6 @@ async function Init() {
             })
             .catch(error => console.error("Ошибка:", error));
     }
-
     async function GetProjectAbout() {
         return await fetch('projects.html')
             .then(response => {
