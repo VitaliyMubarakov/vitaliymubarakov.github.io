@@ -7,7 +7,7 @@ console.log(`
 
 let currentPage = "";
 
-console.info("- StartInitWeb v 6");
+console.info("- StartInitWeb v 7");
 
 //$("#wrapper").load("./about.html body")
 let wrapper = document.getElementById("wrapper");
@@ -20,6 +20,8 @@ function UpdateHeaderButton() {
 
 let projectsHTML;
 let aboutHTML;
+let resumeHTML;
+let mediaHTML;
 
 Init();
 
@@ -91,7 +93,7 @@ function LoadData(type) {
         
         case "media":
             currentPage = "media";
-            wrapper.innerHTML = resumeHTML;
+            wrapper.innerHTML = mediaHTML;
             break;
 
         default:
