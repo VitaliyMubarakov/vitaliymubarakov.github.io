@@ -5,7 +5,7 @@ console.log(`
 ▀▄▄▄▄▀▀▀▄▄▄▀▀▀▀▄▄▄▀▄▄▄▄▀▄▄▄▄▄▀▄▄▄▀▀▄▄▀
 `)
 
-
+let currentPage = "";
 
 console.info("- StartInitWeb v 4");
 
@@ -68,15 +68,21 @@ function LoadData(type) {
 
     switch (type) {
         case "about":
+            if (currentPage == "about") break;
             wrapper.innerHTML = aboutHTML;
+            currentPage = "about";
             break;
         
         case "projects":
+            if (currentPage == "projects") break;
+            currentPage = "projects";
             wrapper.innerHTML = projectsHTML;
             eval("InitProjectJS();");
             break;
         
         case "resume":
+            if (currentPage == "resume") break;
+            currentPage = "resume";
             wrapper.innerHTML = resumeHTML;
             break;
 
