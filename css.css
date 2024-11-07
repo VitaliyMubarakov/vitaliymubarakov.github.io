@@ -111,8 +111,7 @@ h2 {
 
 /* Псевдоэлемент для кислотного абстрактного фона */
 .abstBack {
-    background: #66e37e;
-    background-color: #66e37e;
+    color: #66e37e;
     /* background: linear-gradient(45deg, #ff00ff, #00ff00, #00ffff, #ff0000);
     background-size: 300% 300%;
     -webkit-background-clip: text;
