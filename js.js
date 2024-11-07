@@ -7,7 +7,7 @@ console.log(`
 
 let currentPage = "";
 
-console.info("- StartInitWeb v 4");
+console.info("- StartInitWeb v 5");
 
 //$("#wrapper").load("./about.html body")
 let wrapper = document.getElementById("wrapper");
@@ -64,24 +64,23 @@ async function Init() {
 }
 
 function LoadData(type) {
+    if (currentPage == type) return;
+
     Hide(wrapper);
 
     switch (type) {
         case "about":
-            if (currentPage == "about") break;
             wrapper.innerHTML = aboutHTML;
             currentPage = "about";
             break;
         
         case "projects":
-            if (currentPage == "projects") break;
             currentPage = "projects";
             wrapper.innerHTML = projectsHTML;
             eval("InitProjectJS();");
             break;
         
         case "resume":
-            if (currentPage == "resume") break;
             currentPage = "resume";
             wrapper.innerHTML = resumeHTML;
             break;

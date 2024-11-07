@@ -101,6 +101,10 @@ h2 {
     font-weight: 800;
 }
 
+.topHeader {
+    margin-top: 170px;
+}
+
 
 /* Псевдоэлемент для кислотного абстрактного фона */
 .abstBack {
