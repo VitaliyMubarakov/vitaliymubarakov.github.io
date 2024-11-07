@@ -27,6 +27,7 @@
 
 .mediaLink:hover {
     transform: scale(1.1);
+    background-color: #353542;
 }
 
 .icon {
@@ -51,7 +52,6 @@
 .mediaDesc {
     font-size: 14px;
     color: rgb(174, 174, 174);
-    user-select: all;
     line-height: normal;
 }
 
@@ -67,3 +67,27 @@
     font-weight: 500;
 }
 
+#mediaInfoBlock {
+    width: 50%;
+    height: 200px;
+    margin-top: 200px;
+    display: inline-block;
+}
+
+#headerMain {
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+#linksWrapper {
+    display: inline-block;
+    position: relative;
+    top: 33px;
+    left: 40px;
+}
+
+#mediaWrapper {
+    height: 660px;
+    margin-top: 75px;
+}

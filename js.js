@@ -7,12 +7,14 @@ console.log(`
 
 let currentPage = "";
 
-console.info("- StartInitWeb v 5");
+console.info("- StartInitWeb v 6");
 
 //$("#wrapper").load("./about.html body")
 let wrapper = document.getElementById("wrapper");
 
-console.info("2");
+function UpdateHeaderButton() {
+
+}
 //SetHtmlAbout();
 //setTimeout(SetHtmlProjects, 6000);
 
@@ -26,16 +28,10 @@ async function Init() {
     projectsHTML = await GetHtmlProject();
     aboutHTML = await GetHtmlAbout();
     resumeHTML = await GetHtmlResume();
+    mediaHTML = await GetHtmlMedia();
 
     //initJS
     LoadData(`about`);
-
-    console.log("Load data");
-    console.log(projectsHTML);
-    console.log("=====================================");
-    console.log(aboutHTML);
-
-
 
     async function GetHtmlAbout() {
         return await fetch('about.html')
@@ -55,6 +51,14 @@ async function Init() {
     }
     async function GetHtmlResume() {
         return await fetch('resume.html')
+            .then(response => {
+                if (!response.ok) throw new Error("Ошибка загрузки данных");
+                return response.text();
+            })
+            .catch(error => console.error("Ошибка:", error));
+    }
+    async function GetHtmlMedia() {
+        return await fetch('media.html')
             .then(response => {
                 if (!response.ok) throw new Error("Ошибка загрузки данных");
                 return response.text();
@@ -82,6 +86,11 @@ function LoadData(type) {
         
         case "resume":
             currentPage = "resume";
+            wrapper.innerHTML = resumeHTML;
+            break;
+        
+        case "media":
+            currentPage = "media";
             wrapper.innerHTML = resumeHTML;
             break;
 
