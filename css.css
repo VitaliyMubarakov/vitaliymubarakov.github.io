@@ -147,3 +147,7 @@ h2 {
 
     margin-top: 150px;
 }
+
+.isButton:hover {
+    cursor: pointer;
+}
