@@ -91,28 +91,3 @@
     text-transform: uppercase;
     font-weight: 800;
 }
-
-
-/* Псевдоэлемент для кислотного абстрактного фона */
-.abstBack {
-    background: linear-gradient(45deg, #ff00ff, #00ff00, #00ffff, #ff0000);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: acidColor 6s infinite linear;
-}
-
-/* Анимация градиента */
-@keyframes acidColor {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
